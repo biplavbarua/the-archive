@@ -49,7 +49,13 @@ Tap "Share" -> "Add to Home Screen" on iOS/Android for the full App experience.
 
 ## 📱 Mobile Deployment
 
-This project is configured for **GitHub Pages**.
+### Recommended: Vercel (Future-Proof)
+For the best experience (automatic HTTPS, Global CDN, Pull Request Previews), we recommend Vercel.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbiplavbarua%2Fthe-archive)
+
+### Alternative: GitHub Pages
+This project is also configured for **GitHub Pages**.
 
 ```bash
 npm run deploy
