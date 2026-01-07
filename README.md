@@ -1,73 +1,60 @@
-# React + TypeScript + Vite
+# The Archive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A high-fidelity, minimalist music player with vinyl physics and a smart recommendation engine.
 
-Currently, two official plugins are available:
+![The Archive Banner](public/pwa-512x512.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+**[Launch The Archive](https://biplavbarua.github.io/the-archive/)**
 
-## React Compiler
+Tap "Share" -> "Add to Home Screen" on iOS/Android for the full App experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Vinyl Physics**: Interactive record player with 1:1 touch dragging and scratch physics.
+- **Auto-Radio**: Smart recommendation engine that generates an infinite "Up Next" queue based on the current track (via YouTube Data API).
+- **Hybrid Source**: Direct YouTube playback with a custom audio engine.
+- **PWA Ready**: Installable on mobile devices with native-like performance and splash screens.
+- **Neon 80s UI**: A retro-futuristic aesthetic with glowing controls and metallic finishes.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Framework**: React + TypeScript + Vite
+- **Styling**: Tailwind CSS
+- **State**: Zustand (Local Storage persistence)
+- **Audio**: YouTube IFrame API + Web Audio API
+- **Icons**: Lucide React
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📦 Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/biplavbarua/the-archive.git
+   cd the-archive
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Configuration**
+   - Click the **Gear Icon** in the player.
+   - Enter your **YouTube Data API Key** to enable search and recommendations.
+
+## 📱 Mobile Deployment
+
+This project is configured for **GitHub Pages**.
+
+```bash
+npm run deploy
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📄 License
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+MIT
