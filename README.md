@@ -1,66 +1,87 @@
+<div align="center">
+
+<img src="public/pwa-192x192.png" width="120" height="120" />
+
 # The Archive
 
-> A high-fidelity, minimalist music player with vinyl physics and a smart recommendation engine.
+**The Personal AI Music Curator.**
 
-![The Archive Banner](public/pwa-512x512.png)
+> *"Don't just play music. Curate the vibe."*
 
-## 🚀 Live Demo
-**[Launch The Archive](https://biplavbarua.github.io/the-archive/)**
+[![Deployment Status](https://img.shields.io/github/deployments/biplavbarua/the-archive/github-pages?label=GitHub%20Pages)](https://biplavbarua.github.io/the-archive/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Tap "Share" -> "Add to Home Screen" on iOS/Android for the full App experience.
+[**Launch Live Demo**](https://biplavbarua.github.io/the-archive/)
 
-## ✨ Features
+<img src="public/screenshot_ui.png" alt="Archive UI" width="800" style="border-radius: 10px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);" />
 
-- **Vinyl Physics**: Interactive record player with 1:1 touch dragging and scratch physics.
-- **Auto-Radio**: Smart recommendation engine that generates an infinite "Up Next" queue based on the current track (via YouTube Data API).
-- **Hybrid Source**: Direct YouTube playback with a custom audio engine.
-- **PWA Ready**: Installable on mobile devices with native-like performance and splash screens.
-- **Neon 80s UI**: A retro-futuristic aesthetic with glowing controls and metallic finishes.
+</div>
 
-## 🛠️ Tech Stack
+---
 
-- **Framework**: React + TypeScript + Vite
-- **Styling**: Tailwind CSS
-- **State**: Zustand (Local Storage persistence)
-- **Audio**: YouTube IFrame API + Web Audio API
-- **Icons**: Lucide React
+**The Archive** is a local-first, AI-powered music player that connects your listening history with a World-Class Robot DJ. It goes beyond simple "Similar Songs" algorithms by understanding the *Arc* of your listening session.
 
-## 📦 Getting Started
+## ✨ Why The Archive?
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/biplavbarua/the-archive.git
-   cd the-archive
-   ```
+Most music players relies on "Collaborative Filtering" (what *others* liked). The Archive uses **Large Language Models (LLMs)** to analyze the **Sonic Texture** and **Cultural Context** of a track, acting like a knowledgeable musicologist sitting right next to you.
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+### 🧠 Algorithm 3.0 (The "Musicologist")
+-   **Anti-Loop Memory**: Actively prevents the "same 5 songs" fatigue by remembering session history.
+-   **Vibe Continuity**: Detects if you're "Building Up" (Energy increasing) or "Cooling Down" and selects tracks to match the trajectory.
+-   **Intelligent Skip Logic**: If you skip a song instantly, the AI interprets it as a "Vibe Kill" and avoids that sub-genre for the rest of the session.
 
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
+### 🎛️ Pro Player Features
+-   **Infinite Mode (INF)**: Seamlessly generates an endless queue of recommendation.
+-   **Audiophile Filtering**: Aggressively strips out "Reaction Videos", "Shorts", and "Low Quality" uploads from YouTube.
+-   **Local-First Privacy**: Your data stays in your browser. No central server tracking your every move.
+-   **PWA Ready**: Installable on iOS and Android with native-like performance and splash screens.
 
-4. **Configuration**
-   - Click the **Gear Icon** in the player.
-   - Enter your **YouTube Data API Key** to enable search and recommendations.
+## 🛠️ Getting Started
 
-## 📱 Mobile Deployment
+Running your own instance is simple. This app is **Serverless**, meaning it runs entirely in your browser.
 
-### Recommended: Vercel (Future-Proof)
-For the best experience (automatic HTTPS, Global CDN, Pull Request Previews), we recommend Vercel.
+### Prerequisites
+*   **Node.js**: v18 or higher.
+*   **YouTube Data API Key**: [Get one for free here](https://console.cloud.google.com/apis/credentials).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbiplavbarua%2Fthe-archive)
+### Quick Start
+1.  **Clone the Repo**
+    ```bash
+    git clone https://github.com/biplavbarua/the-archive.git
+    cd the-archive
+    ```
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
+3.  **Run Locally**
+    ```bash
+    npm run dev
+    ```
 
-### Alternative: GitHub Pages
-This project is also configured for **GitHub Pages**.
+### Configuration
+1.  Open the app (`http://localhost:5173/the-archive/`).
+2.  Click the **Settings (Gear)** icon.
+3.  Enter your **YouTube API Key**.
+4.  (Optional) Add a Google Client ID for OAuth features.
 
-```bash
-npm run deploy
-```
+## 🤝 Contributing
 
-## 📄 License
+We believe the future of music discovery is open. 
 
-MIT
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+## 🚀 Tech Stack
+-   **Frontend**: React + Vite (Blazing fast)
+-   **State**: Zustand (Persisted locally)
+-   **AI**: OpenRouter / OpenAI API
+-   **Audio Engine**: YouTube IFrame API (Custom wrapper)
+
+---
+<div align="center">
+Built with ❤️ for music lovers.
+</div>
