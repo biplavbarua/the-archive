@@ -1,4 +1,4 @@
-import{u as E}from"./index-cPuXw7Ke.js";const a={DEFAULT_OPENROUTER_KEY:"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",AI_MODEL:"mistralai/mistral-7b-instruct:free"},g=`
+import{u as E}from"./index-D5Npfd4O.js";const a={DEFAULT_OPENROUTER_KEY:"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",AI_MODEL:"mistralai/mistral-7b-instruct:free"},g=`
   You are a World-Class Musicologist and Expert in "Liner Notes".
   Your goal is to connect music not just by "Genre", but by the **HUMANS** and **INSTRUMENTS** behind the sound.
 
